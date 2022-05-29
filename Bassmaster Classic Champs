@@ -1,0 +1,68 @@
+CREATE TABLE Bassmaster_Classic_Champs (
+Year integer,
+Winner text,
+total_weight integer,
+location text);
+
+Insert INTO Bassmaster_Classic_Champs VALUES
+("1971", "Bobby Murray", "43.11", "Lake Mead"), 
+("1972", "Don Butler", "52.8", "Percy Priest Reservoir"),
+("1973", "Rayo Breckenridge", "52.8", "Clarks Hill"), 
+("1974", "Tommy Martin", "33.7", "Wheeler Lake"),
+("1975", "Jack Hains", "45.4", "Currituck Sound"), 
+("1976", "Rick Clunn", "59.15", "Lake Guntersville"), 
+("1977", "Rick Clunn", "27.7", "Kissimmee Chain"), 
+("1978", "Bobby Murray", "37.9", "Ross Barnett"), 
+("1979", "Hank Parker", "31", "Lake Texoma"), 
+("1980", "Bo Dowden", "54.10", "St Lawrence River"), 
+("1981", "Stanly Mitchell", "35.2", "Alabama River"), 
+("1982", "Paul Elias", "32.8", "Alabama River"), 
+("1983", "Larry Nixon", "18.1", "Ohio River"), 
+("1984", "Rick Clunn", "75.9", "Arkansas River"), 
+("1985", "Jack Chancellor", "45", "Arkansas River"), 
+("1986", "Charlie Reed", "23.9", "Tennessee River"), 
+("1987", "George Cochran", "15.5", "Ohio River"), 
+("1988", "Guido Hibdon", "28.8", "James River"), 
+("1989", "Hank Parker", "31.6", "James River"), 
+("1990", "Rick Clunn", "34.5", "James River"), 
+("1991", "Ken Cook", "33.3", "Chesapeake Bay"), 
+("1992", "Robert Hamilton", "59.6", "Lake Logan Martin"), 
+("1993", "David Fritts", "48.6", "Lake Logan Martin"), 
+("1994", "Bryan Kerchal", "36.7", "High Rock Lake"), 
+("1995", "Mark Davis", "47.14", "High Rock Lake"), 
+("1996", "George Cochran", "31.14", "Lay Lake"), 
+("1997", "Dion Hibdon", "34.13", "Lake Logan Martin"), 
+("1998", "Denny Brauer", "46.3", "High Rock Lock"), 
+("1999", "Davy Hite", "55.10", "Louisiana Delta"), 
+("2000", "Woo Daves", "27.13", "Lake Michigan"), 
+("2001", "Kevin VanDam", "32.5", "Louisiana Delta"), 
+("2002", "Jay Yelas", "45.13", "Lay Lake"), 
+("2003", "Michael Iaconelli", "37.14", "Louisiana Delta"), 
+("2004", "Takahiro Omori", "39.2", "Lake Wylie"), 
+("2005", "Kevin VanDam", "12.15", "Three Rivers"), 
+("2006", "Luke Clausen", "56.2", "Kissimmee Chain"), 
+("2007", "Body Ducket", "48.10", "Lay Lake"), 
+("2008", "Alton Jones", "48.7", "Lake Hartwell"), 
+("2009", "Skeet Reese", "54.13", "Red River"), 
+("2010", "Kevin Van Dam", "51.6", "Lay Lake"), 
+("2011", "Kevin Van Dam", "69.11", "Louisiana Delta"),
+("2012", "Chris Lane", "51.6", "Red River"), 
+("2013", "Cliff Pace", "54.12", "Grand Lake"), 
+("2014", "Randy Howell", "67.8", "Lake Guntersville"), 
+("2015", "Casey Ashley", "50.1", "Lake Hartwell"), 
+("2016", "Edwin Evers", "60.7", "Grand Lake"), 
+("2017", "Jordan Lee", "56.10", "Lake Conroe"), 
+("2018", "Jordan Lee", "47.1", "Lake Hartwell"), 
+("2019", "Ott Defoe", "49.3", "Tennessee River"), 
+("2020", "Hank Cherry", "65.6", "Lake Guntersville"), 
+("2021", "Hank Cherry", "50.15", "Ray Roberts"),
+("2022", "Jason Christie", "54", "Lake Hartwell");
+
+SELECT * FROM Bassmaster_Classic_Champs;
+
+--Total weight from all Classics
+SELECT SUM(total_weight) FROM Bassmaster_Classic_Champs;
+
+--Average weight from all the classics
+
+SELECT avg(total_weight) FROM Bassmaster_Classic_Champs;
