@@ -1,0 +1,30 @@
+CREATE TABLE kbtackle (id integer primary key, name text, brand text, qty integer, cost integer, aisle integer);
+
+INSERT INTO kbtackle VALUES
+(1, "Crankbaits", "6th Sense", 25, 9.99, 3),
+(2, "Topwater", "StrikeKing", 17, 7.99, 3),
+(3, "Jerkbaits", "Megabass", 10, 24.99, 3),
+(4, "Senkos", "Gary Yamamoto", 20, 7.49, 2),
+(5, "D-Bombs", "Missile Baits", 15, 3.99, 2), 
+(6, "Brushogs", "Zoom", 25, 3.99, 2),
+(7, "VileCraw", "BioSpawn", 10, 4.09, 2),
+(8, "BFEs", "Big Bite Baits", 15, 3.79, 2),
+(9, "Powerworms", "Berkley", 10, 4.99, 2),
+(10, "Spinnerbaits","Battle Baits", 10, 9.99, 2),
+(11, "Jackhammers", "Zman", 10, 14.99, 2),
+(12, "Flipping Hooks", "Owner", 20, 6.99, 1), 
+(13, "Flipping Weights", "Ark", 50, 6.99, 1), 
+(14, "Drop Shot Hooks", "VMC", 25, 3.99, 1), 
+(15, "Curados", "Shimano", 10, 179.99, 1);
+
+--display the datebase ordered by cost. 
+SELECT * FROM kbtackle
+ORDER BY cost asc;
+
+--what is the total qty and cost I have on-hand
+SELECT SUM(qty) FROM kbtackle;
+SELECT (cost*qty) FROM kbtackle;
+
+--what brands do I have in the store
+
+SELECT brand FROM kbtac
