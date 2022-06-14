@@ -17,14 +17,13 @@ INSERT INTO kbtackle VALUES
 (14, "Drop Shot Hooks", "VMC", 25, 3.99, 1), 
 (15, "Curados", "Shimano", 10, 179.99, 1);
 
---display the datebase ordered by cost. 
+--Display the datebase ordered by cost. 
 SELECT * FROM kbtackle
 ORDER BY cost asc;
 
---what is the total qty and cost I have on-hand
+--What is the total qty I have on-hand?
 SELECT SUM(qty) FROM kbtackle;
+--How many dollars do I have in inventory?
 SELECT (cost*qty) FROM kbtackle;
-
---what brands do I have in the store
-
-SELECT brand FROM kbtac
+--What brands do I have in the store
+SELECT brand FROM kbtackle;
